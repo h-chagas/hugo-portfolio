@@ -1,4 +1,7 @@
-
+/*
+Display menu when max-width is 
+Change menu hamburger button to 'x' when menu open 
+*/
 function myFunction() {
     var x = document.getElementById("myTopnav");
     var y = document.getElementById('menuIc');

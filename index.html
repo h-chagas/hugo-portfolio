@@ -59,8 +59,8 @@
         <div class="flex-container">
             <div class="flex-items" id="divheight">
                 <p id="backText">hello :)</p>
-                <h1>I'm<br>
-                    Hugo Chagas
+                <h1 id="myName">
+                    I'm Hugo Chagas
                 </h1>
                 <p style='font-size: 1.1em'>
                     <strong>Web developer</strong>
@@ -70,7 +70,9 @@
                 <p> English, Portuguese and Spanish speaker </p>
                 <br>
                 <picture>
-                    <img src="images/hugo-c-150.png" alt="hugo chagas circular picture">
+                    <source media="(max-width: 550px)" srcset="images/hugo-c-150.png">
+                    <source media="(max-width: 900px)" srcset="images/hugo-c-220.png">
+                    <img src="images/hugo-c-300.png" alt="hugo chagas circular picture">
                 </picture>
 
 
