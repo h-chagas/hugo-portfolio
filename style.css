@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'argentum';
+    src: url(fonts/Argentum-Sans/ArgentumSans-Regular.otf);
+   
+}
+
+:root {
+    --color0: #F2F2F2;
+    --color1: #4184BF;
+    --color2: #022873c9;
+    --color3: #03318C; 
+    --color4: #071040;
+    --color5: #000000;
+    --font-standard: 'Sora', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    width: auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+    background-color: var(--color2);
+    font-family: var(--font-standard);
+    color: var(--color5);
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* nav bar menu */
+
+#menuIc {
+    display: none;
+    width: auto;
+}
+
+#menuIc:hover {
+    cursor: pointer;
+}
+
+
+.topnav {
+    background-color: var(--color2);
+    overflow: hidden;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.topnav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--color5);
+    
+    
+}
+
+.centerText {
+    text-align: center;
+ 
+}
+
+.active {
+    background-color: var(--color2);
+    border-radius: 1px;
+}
+
+.topnav a:hover {
+    background-color: #aaaaaa96;
+    border-radius: 2px;
+    border: 1px 1px 1px black;
+    transition: 1s;
+}
+
+/* main */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.flex-items {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+
+#backText {
+    font-size: 3em;
+    color: var(--color4);
+    text-align: center;
+    padding: 10px;
+    
+}
+
+h1 {
+    font-size: 2.1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+
+}
+
+.flex-items:first-of-type {
+    background-color: var(--color0);
+    color: var(--color4);
+  }
+
+.flex-items > p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+#aboutText {
+    
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    background-color: var(--color0);
+    border-radius: 10px;
+    text-align: justify;
+}
+
+#aboutText > p {
+    padding: 10px 15px;
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.644);
+    
+}
+
+
+/*Hire me Button*/
+
+.hire-btn {
+    
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--color3);
+    opacity: 0.8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 38px;
+        
+}
+
+.hire-btn > a {
+    text-decoration: none;
+    color: var(--color0);
+    font-family: var(--font-standard);
+}
+
+.hire-btn:hover {
+
+    transition: 1s;
+    opacity: 1;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+    padding: 8px 15px;
+    
+}
+
+
+@media screen and (max-width: 550px) {
+    
+    #backText {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #menuIc {
+        display: block;
+        text-align: center;
+        background-color: var(--color2);
+        padding: 10px;
+        width: auto;
+        
+    }
+
+       
+    .topnav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+    }
+
+    .topnav > a {
+        border: 1px solid var(--color2);
+    
+    }
+
+    .flex-container > div {
+        width: 100%;
+        
+    }
+
+    #div-hire-btn {
+        text-align: center;
+    }
+
+  
+    #aboutText {
+        font-size: 1em;
+        width: 90%;
+        max-width: fit-content;
+        max-height: fit-content;
+        margin: auto;
+        background-color: var(--color0);
+        border-radius: 10px;
+        text-align: justify;
+    }
+    
+    #aboutText > p {
+        padding: 10px 5px;
+    }
+
+    
+    
+}
+
+
+
+
+
