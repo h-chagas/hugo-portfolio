@@ -85,6 +85,36 @@ body {
     transition: 1s;
 }
 
+
+/*Hire me Button*/
+
+.hire-btn {
+    
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--color3);
+    opacity: 0.8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 38px;
+        
+}
+
+.hire-btn > a {
+    text-decoration: none;
+    color: var(--color0);
+    font-family: var(--font-standard);
+}
+
+.hire-btn:hover {
+
+    transition: 1s;
+    opacity: 1;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+    padding: 8px 15px;
+    
+}
+
 /* main */
 
 .flex-container {
@@ -158,36 +188,6 @@ h1 {
 
 footer {
     border-top: 1px solid rgba(0, 0, 0, 0.644);
-    
-}
-
-
-/*Hire me Button*/
-
-.hire-btn {
-    
-    border: 3px solid rgba(255, 255, 255, 0.3);
-    background-color: var(--color3);
-    opacity: 0.8;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-top: 5px;
-    height: 38px;
-        
-}
-
-.hire-btn > a {
-    text-decoration: none;
-    color: var(--color0);
-    font-family: var(--font-standard);
-}
-
-.hire-btn:hover {
-
-    transition: 1s;
-    opacity: 1;
-    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
-    padding: 8px 15px;
     
 }
 
