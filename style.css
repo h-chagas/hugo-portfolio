@@ -64,7 +64,7 @@ body {
     text-decoration: none;
     padding: 10px;
     color: var(--color5);
-    
+    color: var(--color0)
     
 }
 
@@ -204,6 +204,7 @@ footer {
 
     #menuIc {
         display: block;
+        color: var(--color0);
         text-align: center;
         background-color: var(--color2);
         padding: 10px;
@@ -223,19 +224,17 @@ footer {
     }
 
     .topnav > a {
+        font-size: 1.3em;
         border: 1px solid var(--color2);
-    
     }
 
     .flex-container > div {
         width: 100%;
-        
     }
 
     
-
-    #div-hire-btn {
-        text-align: center;
+    .hire-btn > a {
+        font-size: 1.3em;
     }
 
     .flex-items {
@@ -249,9 +248,7 @@ footer {
         
     }
 
-  
     #aboutText {
-        font-size: 0.8em;
         width: 90%;
         max-width: fit-content;
         max-height: fit-content;
@@ -259,10 +256,89 @@ footer {
         background-color: var(--color0);
         border-radius: 10px;
         text-align: justify;
+        padding: 10px;
     }
     
     #aboutText > p {
+        font-size: 0.9em;
         padding: 10px 5px;
+    }
+
+    
+}
+
+
+/*Mobile viewport (rotated)*/
+
+@media screen and (min-width: 501px) and (max-width: 950px) and (min-height: 250px) and (max-height: 420px) {
+    
+    #backText {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    #menuIc {
+        display: block;
+        color: var(--color0);
+        text-align: center;
+        background-color: var(--color2);
+        padding: 20px;
+        width: auto;
+    }
+
+       
+    .topnav > a {
+        font-size: 1.5em;
+        border: 1px solid var(--color2);
+    }
+
+    .flex-container > div {
+        width: 100%;
+    }
+
+    .hire-btn > a {
+        font-size: 1.5em;
+    }
+
+    .flex-items {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        max-height: fit-content;
+        position: relative;
+        top: 0;
+        left: 0;
+        
+    }
+
+    /*sub-flex-items and their div children made to be beside to each other*/
+    
+    #sub-flex-items1 {
+        float: left;
+        width: 65%;
+    }
+
+    #sub-flex-items2 {
+        float: right;
+        width: 35%;
+    }
+
+  
+    #aboutText {
+        width: 50%;
+        max-width: fit-content;
+        max-height: fit-content;
+        margin: auto;
+        background-color: var(--color0);
+        border-radius: 10px;
+        text-align: justify;
+        padding: 10px;
+    }
+    
+    #aboutText > p {
+        font-size: 0.8em;
+        padding: 10px 5px;
+        
     }
 
     
@@ -271,47 +347,49 @@ footer {
 
 /*Tablet Viewport*/
 
-@media screen and (min-width: 551px) and (max-width: 1100px) {
+@media screen and (min-width: 951px) and (max-width: 1080px) and (min-height: 421px) and (max-height: 800px) {
     
     #backText {
-        font-size: 2em;
+        font-size: 3em;
         text-align: center;
     }
 
     #menuIc {
         display: block;
+        color: var(--color0);
         text-align: center;
         background-color: var(--color2);
-        padding: 8px;
-        width: auto;
-        
-    }
-
-    .topnav {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        position: relative;
-        top: 0;
-        left: 0;
+        padding: 25px;
         width: auto;
     }
 
     .topnav > a {
+        font-size: 2em;
         border: 1px solid var(--color2);
-    
     }
 
-    
-    #div-hire-btn {
-        text-align: center;
+    .flex-container > div {
+        width: 100%;
+    }
+
+    .hire-btn {
+        padding-bottom: 20px;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .hire-btn > a {
+        font-size: 2em;
+        padding: 0;
+        
+        
     }
 
     .flex-items {
         margin: auto;
         text-align: center;
         width: 100%;
-        height: 75vh;
+        max-height: fit-content;
         position: relative;
         top: 0;
         left: 0;
@@ -320,7 +398,6 @@ footer {
 
   
     #aboutText {
-        font-size: 1em;
         width: 90%;
         max-width: fit-content;
         max-height: fit-content;
@@ -328,9 +405,11 @@ footer {
         background-color: var(--color0);
         border-radius: 10px;
         text-align: justify;
+        padding: 10px;
     }
     
     #aboutText > p {
+        font-size: 1.8em;
         padding: 10px 5px;
     }
 
