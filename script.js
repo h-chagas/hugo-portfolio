@@ -24,4 +24,11 @@ function myFunction() {
     
 }
 
+/*Copy right year*/
+
+var date = new Date();
+var year = date.getFullYear();
+document.querySelector('#copyright').innerText += year;
+
+
  

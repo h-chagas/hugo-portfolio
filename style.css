@@ -188,13 +188,10 @@ h1 {
 }
 
 #line-bottom {
-    border-top: 2px solid blanchedalmond;
+    padding-top: 15px;
+    border-bottom: 2px solid blanchedalmond;
     width: 80%;
     margin: auto;
-}
-
-footer {
-    padding: 15px
 }
 
 footer p {
