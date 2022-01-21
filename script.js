@@ -24,7 +24,7 @@ function myFunction() {
     
 }
 
-/*Copy right year*/
+/*Copyright year*/
 
 var date = new Date();
 var year = date.getFullYear();
